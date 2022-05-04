@@ -1,30 +1,48 @@
 import 'package:flutter/material.dart';
 
-// ignore: prefer_const_constructors
 void main() => runApp(MaterialApp(
       home: Scaffold(
-        body: Column(
-          children: <Widget>[
-            Card(
-                child: ListTile(
-              leading: Icon(Icons.monetization_on),
-              title: Text('100.0'),
-              subtitle: Text('1000'),
-            )),
-            Card(
-                child: ListTile(
-              leading: Icon(Icons.monetization_on),
-              title: Text('200.0'),
-              subtitle: Text('1000'),
-            )),
-          ],
-        ),
+        body: TranferList(),
         appBar: AppBar(
-          title: Text('Transfer'),
+          title: const Text('Transfer'),
         ),
         floatingActionButton: FloatingActionButton(
           onPressed: () {},
-          child: Icon(Icons.add),
+          child: const Icon(Icons.add),
         ),
       ),
     ));
+
+class TranferList extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Column(children: <Widget>[
+      TransferItem(Transfer(100.50, 1000)),
+      TransferItem(Transfer(150.90, 1000)),
+      TransferItem(Transfer(10.05, 1000)),
+    ]);
+  }
+}
+
+class TransferItem extends StatelessWidget {
+  final Transfer _transfer;
+
+  TransferItem(this._transfer);
+
+  @override
+  Widget build(BuildContext context) {
+    return Card(
+        child: ListTile(
+      leading: const Icon(Icons.monetization_on),
+      title: Text("Value:" + _transfer.value.toString()),
+      subtitle: Text("Account number:" + _transfer.accountNumber.toString()),
+    ));
+  }
+}
+
+class Transfer {
+  final double value;
+  final int accountNumber;
+
+  Transfer(this.value, this.accountNumber);
+}
