@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/home/pedromacedol/Documentos/ByteBank/bytebank/build/app/intermediates/incremental/mergeDebugResources/merged.dir/values-night-v8/values-night-v8.xml",
+            "outputFile": "/home/pedromacedol/Documentos/ByteBank/build/app/intermediates/incremental/mergeDebugResources/merged.dir/values-night-v8/values-night-v8.xml",
             "map": [
                 {
-                    "source": "/home/pedromacedol/Documentos/ByteBank/bytebank/android/app/src/main/res/values-night/styles.xml",
+                    "source": "/home/pedromacedol/Documentos/ByteBank/android/app/src/main/res/values-night/styles.xml",
                     "from": {
                         "startLines": "3,14",
                         "startColumns": "4,4",
