@@ -12,8 +12,8 @@
 12         to allow setting breakpoints, to provide hot reload, etc.
 13    -->
 14    <uses-permission android:name="android.permission.INTERNET" />
-14-->/home/pedromacedol/Documentos/ByteBank/bytebank/android/app/src/debug/AndroidManifest.xml:6:5-66
-14-->/home/pedromacedol/Documentos/ByteBank/bytebank/android/app/src/debug/AndroidManifest.xml:6:22-64
+14-->/home/pedromacedol/Documentos/ByteBank/android/app/src/debug/AndroidManifest.xml:6:5-66
+14-->/home/pedromacedol/Documentos/ByteBank/android/app/src/debug/AndroidManifest.xml:6:22-64
 15
 16    <application
 17        android:name="android.app.Application"
